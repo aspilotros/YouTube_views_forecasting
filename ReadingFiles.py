@@ -9,7 +9,8 @@ Reading the XML files of YouTube Crawler extrating the time series of views
 INPUT OUTPUT: 
 Directory Complete path is the path of the data folder
 Example of Directory C:/Users/Alessandro/windows-share/Portfolio/Firstbatch/data
-The output files are written one directory up in respect data
+The output files are written one directory up in respect data: a dictionary and a 
+pandas data frame.
 
 PROGRAM STRUCTURE
 1. The program is reading the names of all the files in the directory and creating
@@ -51,7 +52,6 @@ dict_data=dict()
 j = 0
 file_names=df_ids.iloc[:,0]
 for line in file_names:
-    #file = open(DIRECTORY + "/" + line.rstrip('\n'), 'r')
     file= open(DIRECTORY + "/" + line, 'r') 
     f=file.read()
     
