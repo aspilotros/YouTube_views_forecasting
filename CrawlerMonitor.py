@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon May 15 17:54:35 2017
-
+This program monitors the status of the crawler counting 
+the lines in the different output files and plotting the results each hour
 @author: ale
 """
 #sys.stdout.write(frmt_date)
